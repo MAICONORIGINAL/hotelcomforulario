@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel MAICON, Belo Horizonte - Reserva de quartos, informações e tarifas">
+    <title>Hotel MAICON</title>
+
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="formulario.css">
+
+    <!-- Vinculação do JavaScript externo -->
+    <script src="formulario.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Hotel MAICON - Belo Horizonte</h1>
+    <p>Localizado em Belo Horizonte, perto do Aeroporto da Pampulha</p>
+</header>
+
+<div class="container">
+    <!-- Informações sobre o hotel -->
+    <div class="hotel-info">
+        <h2>Sobre o Hotel</h2>
+        <p>O Hotel MAICON está localizado a 10 minutos do Aeroporto da Pampulha e a 30 minutos do Aeroporto Internacional de Confins. Oferece uma piscina interna, Wi-Fi gratuito, estacionamento e diversas comodidades como academia e spa.</p>
+        <ul>
+            <li>Endereço: Av. Cristiano Machado, 4001, Belo Horizonte, 31910-810, Brasil</li>
+            <li>Check-in: 05/11/2024 | Check-out: 06/11/2024</li>
+            <li>Telefone: (31) 3197 8014</li>
+        </ul>
+    </div>
+
+    <!-- Formulário de Reserva -->
+    <div class="reservation-form">
+        <h2>Formulário de Reserva</h2>
+        <form action="https://www.exemplo.com/enviar-reserva" method="POST">
+            <h3>Dados Pessoais</h3>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="Feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="sexo" value="Outro">
+            <label for="outro">Outro</label>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="checkin">Data de Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Data de Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="tipo_quarto">Tipo de Quarto:</label>
+            <select id="tipo_quarto" name="tipo_quarto" required>
+                <option value="simples">Simples</option>
+                <option value="duplo">Duplo</option>
+                <option value="triplo">Triplo</option>
+                <option value="suite">Suíte</option>
+            </select>
+
+            <label for="num_noites">Número de Noites:</label>
+            <input type="number" id="num_noites" name="num_noites" required>
+
+            <label for="num_hospedes">Número de Hospedes:</label>
+            <input type="number" id="num_hospedes" name="num_hospedes" required>
+
+            <label for="total_estimado">Total Estimado:</label>
+            <input type="text" id="total_estimado" name="total_estimado" disabled>
+
+            <input type="submit" value="Enviar Reserva">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

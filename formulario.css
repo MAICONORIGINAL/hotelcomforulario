@@ -1,0 +1,94 @@
+/* formulário.css */
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Container centralizado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do formulário */
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Títulos e labels */
+h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para os campos de input */
+input[type="text"], input[type="email"], input[type="number"], input[type="date"],
+textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para os botões */
+.btn {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundohotell.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;  /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center;  /* Centraliza a imagem */
+    background-attachment: fixed;  /* Fixa a imagem enquanto o usuário rola a página */
+    color: #333;
+}
+
